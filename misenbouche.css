@@ -1,7 +1,17 @@
+html, body{
+    height: 100%;
+}
+#wrapper{
+    min-height: 100%;
+    height: auto !important;
+    height:100%;
+    position: relative;;
+}
 body{
     font-family: 'Open Sans', sans-serif;
+    height: 100%;
 }
-header, footer{
+header{
     background-color: deeppink;
     color: black;
     padding: 15px;
@@ -26,13 +36,18 @@ nav li{
 img.alignleft{
     margin:0 15px 0 0;
     padding:2px;
-    border: 2px solid white;
+    border-radius: 50% 20% / 10% 40%;
     float: left;
 }
 img.alignright{
     margin:0 0 0 15px;
     float: right;
 }
+img.aligncenter{
+    border-radius: 50% 20% / 10% 40%;
+}
+
+
 p.alignleft{
     text-align:left;
 }
@@ -42,6 +57,17 @@ p.alignright{
 .clear{
     clear:both;
 }
+#content{
+    padding: 15px;
+    height:100%;
+
+}
+footer, #push{
+    height: 150px;
+}
 footer{
-    list-style-type: none;
+    list-style-type: none ;
+    background-color:deeppink;
+    text-align: center;
+
 }
