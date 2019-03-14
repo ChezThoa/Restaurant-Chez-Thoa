@@ -1,0 +1,152 @@
+.title{
+    color:blue;
+    text-align:center;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    text-decoration: none;
+    text-justify:top;
+}
+.sous-title{
+    color:blue;
+    text-align: center;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    text-decoration-line: none;
+}
+.bottom{
+    color: turquoise;
+    font-size: 18px;
+    text-align: center;
+    padding-top:15px;
+}
+body{
+    background-image:url("image/logo_resto.jpg");
+    text-align: center;
+    background-repeat: space;
+
+}
+/* menu*/
+.effetmenu{
+    font-size: 40px;
+    width:65px;
+    height:50px;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    color: green;
+    background-color: white;
+    transform:rotate(-45deg);
+    
+}
+.effetcontact{
+    font-size: 35px;
+    width:70px;
+    height:65px;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    color: green;
+    background-color: white;
+    transform:rotate(-45deg);  
+    margin-top:45px;
+}
+.contact{
+    text-align:center;
+}
+/*effet boutons*/
+a 
+{
+	border-radius:15px;
+	display:inline-block;
+	transform: scale(1.1) rotate(45deg) ;
+	overflow:hidden;
+	position:relative;
+	box-shadow: 0 0 15px gray;
+	border:solid white;
+	background:white;
+	transition:0.5s;
+	z-index:1;
+	height:100px;
+	width:100px;
+}
+a:hover,a:focus
+{
+	transform: scale(3.07) rotate(0deg) ;
+	transform-origin:top center;
+	z-index:5;
+	background:white;
+	transition:0.5s;
+}
+a:before{
+	position:absolute;
+	display:block;
+	width:160px;
+	text-align:center;border-radius:15px;
+	background:rgba(0,0,0,0.3);
+}
+/* le footer*/
+.footertext{
+    color :blue;
+    text-align: center;
+}
+.conteneurfooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5px;
+}
+.social{
+    
+    position: relative;
+    border-radius: 100%;
+    width:59px;
+    height:60px;
+    justify-content: center;   /* aligner l'image verticalement*/
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.social img{
+    z-index: 1;
+    width: 59px;
+    height:60px;
+    
+}
+.fondface, .fondtrip, .fondgoogle{
+    top: -60px;
+    z-index:2;
+    display: block;
+    width:59px;
+    height:60px;
+    position: absolute;
+    transition:0.5s; 
+}
+.fondface{
+    background-color:blue;
+}
+.fondtrip{
+    background-color: green;
+}
+.fondgoogle{
+    background-color:blue;
+}
+.social:hover .fondface{
+    top : 0;
+}
+.social:hover .fondtrip{
+    top : 0;
+}
+.social:hover .fondgoogle{
+    top : 0;
+}
+
+footer{
+    margin-top: 50px;
+    margin-bottom:130px;
+    color:blue;
+}

@@ -1,0 +1,32 @@
+
+nav{
+    display: inline-block;
+    text-align: justify;    
+}
+nav ul{
+    list-style-type: none;
+}
+nav li{
+    display: inline-block;
+    margin-right: 10px;
+    
+}
+nav a
+{
+font-size: 1.3em;
+color: #181818;
+padding-bottom: 3px;
+text-decoration: none;
+}
+nav a:hover
+/* souligner les balises quand on mets la souris endessus*/
+{
+color: #760001;
+border-bottom: 3px solid #760001;
+}
+h3{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 35px;
+    
+}
