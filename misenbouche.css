@@ -1,158 +1,55 @@
-.bigente{
-    border: 2px cyan inset;
-    background-color: cyan;
+html, body{
+    height: 100%;
 }
-.tete{
-    text-align: center;
-    color: red;
-    font-size: 65px;
-    text-decoration: underline;
-    /*text-shadow: 0px 14px 14px; */
+#wrapper{
+    min-height: 100%;
+    height: auto !important;
+    height:100%;
+    position: relative;;
 }
-.sous-tete{
+body{
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+}
+header{
+    background-color: deeppink;
+    color: black;
+    padding: 15px;
     text-align: center;
-    color: fuchsia;
-    font-size: 45px;
-    text-decoration: underline;
-     /* text-shadow: 0px 14px 14px; */
+}
+nav{
+    background-color: deeppink;
 }
 
-/*body menu*/
-article{
-    width:1000px;
+nav li{
+    list-style-type: none;
 }
-article p{
-    border : 2px black double ;
-    overflow: hidden;
-    color: blue;
-    width:300px;
+nav li{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    width: 175px ;
+    height: 20px;
+    border-right: 1px solid black;
+    text-align: center;
 }
-section{
-    border : 2px cyan inset;
-    position: relative;
-    margin-top: 90px;
-    margin-left: 300px;
-    margin-right:300px;
-    height:600px;
-    background-color: white;
-    overflow: auto;
-}
-/*body images*/
-nav {
-    display :inline-block;
-    width:150 px;
-    border: 1px solid black;
-    vertical-align: top;
-    z-index:3;
-}
-.nav1 {
-    float: left;
-    z-index: 1;
-}
-.nav2{
-    float:right;
-    z-indez:2;
-}
-#galerie-menu 
-{
-    width:150px;
-    height: 650px;
-    margin-left: 70px;
-    margin-top: 70px;
-	border:dashed white 15px;
-	border-radius:15px;
-	box-shadow: 0 0 1px black, inset 0px 0px 5px black, 0 0 50px 50px white ;
-	background:white;
-    text-align:left;
-    float:left;
-}
-#galerie-menu1{
-    width:150px;
-    height: 650px;
-    margin-right: 70px;
-    margin-top: 70px;
-	border:dashed white 15px;
-	border-radius:15px;
-	box-shadow: 0 0 1px black, inset 0px 0px 5px black, 0 0 50px 50px white ;
-	background:white;
-    text-align:left;
-    vertical-align: top;
-    float:right;
-}
-a img 
-{
-	height:120px;
-	width:120px;
-	border:none;
-	vertical-align:top;
-    border-radius:10px;
-}
-a 
-{
-	border-radius:15px;
-	display:inline-block;
-	transform: scale(1.1) rotate(45deg) ;
-	overflow:hidden;
-	position:relative;
-	box-shadow: 0 0 15px gray;
-	border:solid white;
-	background:white;
-	transition:0.5s;
-	z-index:1;
-	height:120px;
-	width:120px;
-}
-a:hover,a:focus 
-{
-	transform: scale(3.07) rotate(0deg) ;
-	transform-origin:top center;
-	z-index:5;
-	background:white;
-	transition:0.5s;
-}
-a:before 
-{
-	content:attr(title);
-	position:absolute;
-	transform:rotate(-45deg); /* incliner les titres */
-	transform-origin: 130px 64px;
-	border:solid;
-	color:white;
-	display:block;
-	width:160px;
-	text-align:center;border-radius:15px;
-	background:rgba(0,0,0,0.3);
-}
-/* images body section*/
-
 img.alignleft{
     margin:0 15px 0 0;
-    padding-top:2px;
-    border-radius: 50%;
-    border:2px solid white;
+    padding:2px;
+    border-radius: 50% 20% / 10% 40%;
     float: left;
 }
-img.alignleft:hover{
-    transform: scale(2.2) rotateX(50deg);
-    transform-origin: top left;
-    text-align: right;
-    transition: 0.5s;
-
+img.alignright{
+    margin:0 0 0 15px;
+    float: right;
 }
 img.aligncenter{
-    border-radius: 50%;
-    text-align: center;
+    border-radius: 50% 20% / 10% 40%;
 }
-img.aligncenter:hover{
-    transform: scale(2.2) rotateX(50deg);
-    transform-origin: top center;
-    transition: 0.5s;
-}
+
+
 p.alignleft{
     text-align:left;
-    width:400px;
-    overflow: hidden;
-    text-justify:inter-cluster;
 }
 p.alignright{
     text-align: right;
@@ -160,134 +57,17 @@ p.alignright{
 .clear{
     clear:both;
 }
+#content{
+    padding: 15px;
+    height:100%;
 
-/* le footer*/
-.conteneurfooter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 5px;
 }
-.social{
-    
-    position: relative;
-    border-radius: 100%;
-    width:59px;
-    height:60px;
-    justify-content: center;   /* aligner l'image verticalement*/
-    align-items: center;
-    display: flex;
-    overflow: hidden;
-    margin-right : 10px;
+footer, #push{
+    height: 150px;
 }
-.social img{
-    z-index: 1;
-    width: 59px;
-    height:60px;
-    
-}
-.fondface, .fondtrip, .fondgoogle{
-    top: -60px;
-    z-index:2;
-    display: block;
-    width:59px;
-    height:60px;
-    position: absolute;
-    transition:0.5s; 
-}
-.fondface{
-    background-color:blue;
-}
-.fondtrip{
-    background-color: green;
-}
-.fondgoogle{
-    background-color:yellow;
-}
-.social:hover .fondface{
-    top : 0;
-}
-.social:hover .fondtrip{
-    top : 0;
-}
-.social:hover .fondgoogle{
-    top : 0;
-}
-.contact{
-    display:inline-block;
-    list-style-type: none;
-    vertical-align: top;
-}
-/*footer contact*/
-.addfooter{
-    color:red;
+footer{
+    list-style-type: none ;
+    background-color:deeppink;
     text-align: center;
-    background-color: cyan;
-}
-.addfooter1{
-    color:fuchsia;
-    text-align: center;
-    text-decoration: underline cyan;
-}
-
-/*panorama slide*/
-.panorama{
-    width:1200px;
-    height:300px;
-    margin-left:50px;
-    border-radius: 15px;
-    background-image: url("image/panora1.jpeg");
-    overflow: hidden;
-
-    -webkit-animation-name: panorama;
-    -webkit-animation-duration: 20s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-
-    -moz-animation-name: panorama;
-    -moz-animation-duration: 20s;
-    -moz-animation-timing-function: linear;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-direction: alternate;
-
-    animation-name: panorama;
-    animation-duration: 20s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-
-}
-@-webkit-keyframes panorama{
-    11%{background-image: url("image/panora5.png");}
-    22%{background-image: url("image/panorama10.png");}
-    44%{background-image: url("image/salade_papaye_vert_2.png");}
-    66%{background-image: url("image/panora3.png");}
-    120%{background-image: url("image/panora2.png");}
-
-
-}
-@-moz-keyframes panorama{
-    11%{background-image: url("image/panora5.png");}
-    22%{background-image: url("image/panorama10.png");}
-    44%{background-image: url("image/salade_papaye_vert_2.png");}
-    66%{background-image: url("image/panora3.png");}
-    99%{background-image: url("image/panorama22.jpg");}
-    120%{background-image: url("image/panora2.png");}
-}
-@keyframes panorama{
-    11%{background-image: url("image/panora5.png");}
-    22%{background-image: url("image/panorama10.png");}
-    44%{background-image: url("image/salade_papaye_vert_2.png");}
-    66%{background-image: url("image/panora3.png");}
-    99%{background-image: url("image/panorama22.jpg");}
-    120%{background-image: url("image/panora2.png");}
-}
-/*seulement pour la fondue*/
-.fondue1{
-    color : red;
-}
-.fondue{
-    color:red;
-    margin-left : 137px;
+    margin-top: 2px;
 }

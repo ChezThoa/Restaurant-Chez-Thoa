@@ -1,0 +1,132 @@
+body{
+    font-family: 'Source code pro', Calibri, serif;
+    margin:0px;
+    padding:0px;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("images/hinhdaidien.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+div{
+    margin:20px auto;
+    width:80;
+    padding: 15px;
+}
+nav{
+    background-color: deeppink;
+    
+}
+nav > ul{
+    width: 50%;
+    margin: 0px auto;
+    padding:0px;
+}
+nav > ul::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+nav > ul > li{
+    float: left;
+    position: relative;
+}
+nav > ul > li > a{
+    padding: 20px 30px;
+    color:black;
+}
+nav > ul > li:hover a{
+    padding: 15px 30px 20px 30px;
+}
+nav  li{
+    list-style-type:none;
+}
+.submenu{
+    display: none;
+}
+nav a{
+    display: inline-block;
+    width:150px;
+    border-right: 1px solid black;
+    text-align: center;
+    text-decoration: none;
+}
+nav li:hover .submenu{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+.submenu li{
+    border-bottom: 1px solid red;
+}
+.submenu li a{
+    padding: 15px 30px;
+    font-size: 13px;
+    color: yellowgreen;
+    width: 270px;
+}
+.menu-menu:hover{
+    border-top: 5px solid #e44d26;
+    background-color: RGBa(228, 77, 38,0.15);
+}
+.menu-resconta:hover{
+    border-top: 5px solid cyan;
+    background-color:RGBa(000, 112, 192,0.15);
+}
+.menu-commentaires:hover{
+    border-top: 5px solid deeppink;
+    background-color: RGBa(220,220,0.15);
+}
+.menu-menu .submenu{
+    background-color: floralwhite;
+}
+.menu-resconta .submenu{
+    background-color: floralwhite;
+}
+.menu-commentaires .submenu{
+    background-color: floralwhite;
+}
+.submenu li:hover a{
+    color: #EEE;
+    font-weight: bold;
+}
+.menu-menu .submenu li:hover{
+    background-color:RGB(210, 77,60);
+}
+.menu-resconta .submenu li:hover{
+    background-color:RGB(000,115,200);
+}
+.menu-commentaires .submenu li:hover{
+    background-color: RGB(200,165,75);
+}
+nav input[type=checkbox]:checked ~ ul{
+    display: block;
+}
+@media screen and (max-width:780px ){
+    .menu-mobile{
+        display:block;
+        color:#FFF;
+        background-color: RGBa(29,197,151,0.97);
+        text-align: center;
+        padding: 12px 0px;
+    }
+    nav ul{
+        display:none;
+    }
+    nav ul li, nav ul li a{
+        width:100%;
+        text-align: center;
+        
+    }
+    nav ul li a, nav ul li:hover a{
+        padding: 10px 0px;
+    }
+    nav li:hover .submenu{
+        display: block;
+        position: static;
+    }
+}
